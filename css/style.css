@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.main {
+    color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://wallpapercave.com/wp/wp4676582.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.conteiner {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 5px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#square {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 300px;
+    margin-bottom: 100px;
+    transform-style: preserve-3d;
+    transition: all 0.3 ease-in;
+    box-shadow: 3px 3px 5px #420373;
+}
+
+.front,
+.left,
+.right {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    border-radius: 5px;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, #6529A2 0%, #32075D 73%);
+    box-shadow: 3px 3px 5px #523894;
+    gap: 30px;
+}
+
+.front {
+    transform: translateZ(50px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.actions button {
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    min-height: 35px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #5601d6;
+    color: aliceblue;
+}
+
+.conteiner h1 {
+    font-size: 35px;
+}
+
+.conteiner form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner form input,
+.conteiner form button,
+.conteiner form h5 {
+    margin-bottom: 20px;
+}
+
+.conteiner form input {
+    background-color: #f5f5f5;
+    border: 0;
+    padding: 10px;
+    min-height: 30px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.conteiner form button {
+    border: 0;
+    padding: 10px 0;
+    outline: none;
+    min-height: 30px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: #5601d6;
+    color: aliceblue;
+    font-family: "Nunito Sans", sans-serif;
+}
